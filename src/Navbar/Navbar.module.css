@@ -4,11 +4,11 @@ nav {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 5px 15px;
+    padding: 5px 15px 10px 5px;
     border-radius: 0 0 20px 20px;
     position: fixed;
     top: 0;
-    z-index: 1;
+    z-index: 2;
 }
 
 label {
