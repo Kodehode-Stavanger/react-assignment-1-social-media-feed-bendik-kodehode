@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faThumbsUp } from '@fortawesome/free-solid-svg-icons'
 import DeletePost from "../DeletePost/DeletePost";
 
-function Post({post : {username, content, likes, timestamp}, index, selectedUser, setPosts}) {
+function Post({post : {username, content, likes, timestamp}, index}) {
     const cleanedTimestamp = timestamp
         .replace("T", " ")
         .replace("Z", "")
@@ -14,7 +14,7 @@ function Post({post : {username, content, likes, timestamp}, index, selectedUser
             <div className={style.contentContainer}>
                 <div className={style.titleContainer}>
                     <h2 className={style.title}>{username}</h2>
-                    <DeletePost user={username} selectedUser={selectedUser} setPosts={setPosts} index={index}/>
+                    <DeletePost user={username} index={index}/>
                 </div>
                 <p className={style.paragraph}>{content}</p>
             </div>

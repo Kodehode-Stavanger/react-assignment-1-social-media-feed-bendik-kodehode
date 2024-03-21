@@ -1,9 +1,12 @@
-import { useState } from "react";
 import style from "./AddPost.module.css";
+import React, { useState, useContext } from "react";
+import { PostContext, UserContext } from "../App";
 
-function AddPost({setPosts, selectedUser}) {
+function AddPost() {
     const [message, setMessage] = useState("");
     const [error, setError] = useState("");
+    const [posts, setPosts] = useContext(PostContext);
+    const [selectedUser, setSelectedUser] = useContext(UserContext);
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -23,13 +26,13 @@ function AddPost({setPosts, selectedUser}) {
     };
 
     return (
-        <div className={style.container}>
-            <textarea id="textField" name="textField" value={message} autoComplete="off" placeholder="What's on your mind?" required onChange={(e) => setMessage(e.target.value)}></textarea>
+        <form className={style.container} onSubmit={handleSubmit}>
+            <textarea id="textField" name="textField" value={message} autoComplete="off" placeholder="What's on your mind?" onChange={(e) => setMessage(e.target.value)} required></textarea>
             <div className={style.btnContainer}>
-                <button type="submit" onClick={handleSubmit}>Post</button>
+                <button type="submit">Post</button>
             </div>
             {error && <div className={style.error}>{error}</div>}
-        </div>
+        </form>
     )
 }
 
