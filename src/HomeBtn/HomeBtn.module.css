@@ -1,0 +1,13 @@
+.faHome {
+    font-size: 24px;
+    color: #E0FBFC;
+    padding: 5px;
+}
+
+.faHome:hover {
+    cursor: pointer;
+}
+
+.faHome:active {
+    color: #d0eaeb
+}

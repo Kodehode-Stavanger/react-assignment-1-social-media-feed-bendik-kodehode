@@ -1,0 +1,63 @@
+.card {
+    background: linear-gradient(to top, #3D5A80, #43638d);
+    max-width: 500px;
+    min-height: 120px;
+    padding: 5px 10px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    border: 1px solid #e0fbfc42;
+}
+
+.title {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    color: #E0FBFC;
+}
+
+p {
+    color: #bbd4d4;
+}
+
+.paragraph {
+    margin: 2px 0 10px 0;
+}
+
+.likeContainer {
+    display: flex;
+    gap: 5px;
+}
+
+.infoContainer {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.titleContainer {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+/* .titleContainer::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 5px;
+    left: 0;
+    background: linear-gradient(to right, #ee6d4d88, transparent);
+} */
+
+.icon {
+    max-height: 20px;
+}
+
+.faThumbsUp {
+    color: #E0FBFC;
+}
