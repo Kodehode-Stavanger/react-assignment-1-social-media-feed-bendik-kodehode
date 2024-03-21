@@ -1,22 +1,29 @@
 nav {
-    background: linear-gradient(to top, rgb(97, 97, 97), gray);
+    background: linear-gradient(to top, #df6648, #EE6C4D);
     max-width: 800px;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 5px 15px 10px 5px;
-    border-radius: 0 0 20px 20px;
+    padding: 0 15px 5px 5px;
+    border-radius: 0 0 10px 10px;
     position: fixed;
     top: 0;
     z-index: 2;
 }
 
 label {
-    color: white;
+    color: #E0FBFC;
+    user-select: none;
 }
 
 .userContainer {
     display: flex;
     align-items: center;
     gap: 5px;
+}
+
+select {
+    background-color: #E0FBFC;
+    border-radius: 5px;
+    color: #3D5A80;
 }

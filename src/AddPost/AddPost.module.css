@@ -4,6 +4,7 @@ textarea {
     height: 80px;
     border-radius: 8px;
     padding: 5px;
+    background-color: #E0FBFC;
 }
 
 button {
@@ -11,7 +12,8 @@ button {
 }
 
 .container {
-    background: linear-gradient(to top, rgba(40, 38, 126, 0.2), rgba(72, 58, 255, 0.1));
+    /* background: linear-gradient(to top, rgba(40, 38, 126, 0.2), rgba(72, 58, 255, 0.1)); */
+    background-color: #3D5A80;
     box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
     display: flex;
     flex-direction: column;
@@ -22,6 +24,8 @@ button {
     margin: 20px 0 40px 0;
     flex-grow: 1;
     position: relative;
+    border-radius: 8px;
+    border: 1px solid #e0fbfc42;
 }
 
 .error {

@@ -13,7 +13,7 @@
 
 body {
     min-height: 100vh;
-    background: linear-gradient(to bottom, #ebf4f5, #b5c6e0);
+    background: radial-gradient(rgb(53, 53, 53), rgb(41, 41, 41))
 }
 
 header {
